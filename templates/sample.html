@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %}
+    <title>Sample</title>
+    {% endblock title %}
+
+</head>
+
+<body>
+    {% include "partials/_topbar.html" %}
+    {% include "partials/_navbar.html" %}
+    {% block content %}
+    <h1>Welcome to Sample page</h1>
+    {% endblock content %}
+    {% include "partials/_footer.html" %}
+
+</body>
+
+</html>
